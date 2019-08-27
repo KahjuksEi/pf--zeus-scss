@@ -1,0 +1,264 @@
+@font-face {
+font-family: 'Cinzel Decorative-reg';  
+src: url("fonts/CinzelDecorative-Regular.ttf"); 
+}
+@font-face {
+font-family: 'Cinzel Decorative-bold';  
+src: url("fonts/CinzelDecorative-Bold.ttf"); 
+}
+@font-face {
+font-family: 'Cinzel Decorative-black';  
+src: url("fonts/CinzelDecorative-Black.ttf"); 
+}
+@font-face {
+font-family: 'Amiri Regular';  
+src: url("fonts/Amiri-Regular.ttf"); 
+}
+@mixin title(){
+	font-family: 'Cinzel Decorative-bold';
+	font-size: 72px;
+}
+
+body{margin: 0 auto;}
+
+.block1{
+	width: 100%;
+	height: 100vh;
+	background-image: url("img/bg1.png");
+	background-color: #1a1c0f;
+	background-size: cover;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+.block1-content{
+	text-align: center;
+	padding: 150px 0px 0px 0px;
+}
+.block1-logo{
+	width: 153px;
+	height: 162px;
+	background-image: url("img/logo1.png");
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+.block1-title{
+  @include title();	
+  width: 100%; 
+  text-align: center; 
+  color: white; 
+}
+.block1-title span{ 
+  width: 240px;
+  height: 0;
+  border: 1px solid #cdb378;
+  margin: 20px;
+  display:inline-block;
+}
+.block1-text{
+  font-family: 'Cinzel Decorative-reg';
+  color: white;
+  font-size: 36px;
+}
+.block2{
+   background-color:#1a1c0f;
+   padding:100px 0px 120px 215px;
+}
+.block2-title{
+	@include title();
+    color: white;
+}
+.block2-text{
+	font-family: 'Amiri Regular'; 
+	font-size: 24px;
+	color: #cdb378; 
+}
+.catcher{
+	width: 590px;
+	height: 630px;
+	background-image: url("img/bg2.png");
+	background-position: right;
+	float: right;
+	margin-top: -36px;
+}
+.beer{
+	width: 230px;
+	height: 916px;
+	background-image: url("img/beer.png");
+	float: right;
+	margin: 50px -115px 0px 0px;
+}
+.logo{
+	width: 153px;
+	height: 162px;
+	float: right;
+	margin: 200px -264px 0px 0px;
+	background-image: url("img/logo1.png");
+	opacity: .1;
+	transform: rotateZ(25deg) scale(5);
+}
+.block3{
+	background-color:#232615;
+  padding:100px 0px 90px 215px;
+}
+.block3-title{
+  @include title();
+  color: #cdb378;
+}
+.block-text{
+	font-family: 'Amiri Regular'; 
+	font-size: 24px;
+	color: #aeb492; 
+}
+.zeus-button{
+	margin-top: 60px;
+	padding:20px 60px 20px 60px;
+	font-family: 'Amiri Regular'; 
+	font-size: 16px;
+	color: white;
+	background-color: #232615;
+	border: 3px solid #404429; 
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.zeus-button:hover{
+	background-color: #15170C;
+}
+
+.block4{
+	height: 890px;
+	background-image: url("img/bg3.png");
+	background-position: center;
+	background-size: cover;
+}
+.block4-title{
+	@include title();
+	padding:  300px 0px 0px 450px; 
+	margin: 0 auto;
+    max-width: 601px;
+}
+.window{
+	width: 980px;
+	height: 1017px;
+	background-image: url("img/bg4.png");
+	background-size: cover;
+	background-position: center;
+	float: right;
+	margin-top: -300px;
+}
+.block5{
+	height: 3500px;
+	padding:100px 0px 90px 0px;
+	background-image: url("img/bg5.png");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.block5-title1{
+  @include title();
+  padding:100px 0px 90px 215px;
+  color: #cdb378; 
+  max-width: 650px;
+}
+.block5 p{
+	padding:0px 0px 0px 215px;
+}
+.block5-title2{
+	@include title();
+	text-align: center;
+	color: #cdb378;
+	margin-top: 300px;
+}
+.block5 button {display: block; margin: 60px auto;}
+.mw650{max-width: 650px;}
+.tac{text-align: center;}
+
+@media screen and (max-width: 1280px) {
+	.beer{margin: -90px -115px 0px 0px; transform: scale(0.8);}
+	.window{width: 490px;height: 509px;}
+	.block2{padding: 100px 0px 100px 100px;}
+	.block3{padding: 100px 0px 100px 100px;}
+	.block5{height: 2500px;}
+	.block5-title1{ padding: 0px 0px 0px 100px;}
+	.block5 p { padding: 0px 0px 0px 100px;}
+	.block5-title2{margin-top: 200px;}
+	.logo{margin: -190px 441px 0px 0px;}
+}
+
+@media screen and (max-width: 1024px) {
+	.catcher{width: 400px;}
+	.block4{height: 600px;}
+	.block4-title{padding: 100px 0px 0px 530px; font-size: 48px;}
+	.block5{height: 2000px;}
+	.block5-title1{ font-size: 48px;}
+	.block5-title2{ font-size: 48px; margin-top: 100px;}
+}
+
+@media screen and (max-width: 960px) {
+
+	.block1{height: 50vh;}
+	.block1-content{padding: 20px 0px 0px 0px;}
+	.block1-logo{margin-bottom: 20px;}
+	.block1-title{font-size: 36px;}
+	.block2-title{ font-size: 36px;}
+	.block3-title{ font-size: 36px;}
+	.block4-title{ font-size: 36px;}
+	.block5-title1{ font-size: 36px;}
+	.block5-title2{ font-size: 36px;}
+}
+
+@media screen and (max-width: 768px) {
+.block1-title span {width: 100px;}
+ .block2{padding: 30px 0px 100px 30px;}
+ .block3{padding: 30px 0px 30px 30px;}
+ .zeus-button{margin-top: 0;} 
+ .window{width: 300px;height: 300px;margin-top: -140px;}   
+ .block4{height: 400px;}
+ .block5{height: 1600px;}
+}
+
+@media screen and (max-width: 720px) {
+.block1{height: 46vh;}	
+.beer{margin: -240px -170px 0px 0px;;transform: scale(0.5);}
+.catcher{margin-top: -110px;transform: scale(0.7);}
+.logo{margin: -300px 300px 0px 0px;transform: rotateZ(25deg) scale(3);}
+.block1-title{font-size: 20px;}
+.block1-text{font-size: 16px;}
+.block2-title{ font-size: 20px;}
+.block3-title{ font-size: 20px;}
+.block4-title{ font-size: 20px;padding: 100px 0px 0px 400px;}
+.block5-title1{ font-size: 20px;}
+.block5-title2{ font-size: 20px;}
+}
+
+@media screen and (max-width: 600px) {
+	.block1 {height: 32vh;}
+	.block1-logo{margin-bottom: 0;}
+	.beer{margin: -150px 30px 0px 0px;transform: scale(0.6);}
+	.catcher{display: none;}
+	.logo{margin: -350px 250px 0px 0px;}
+	.block4-title{padding: 100px 0px 0px 300px;}
+	.block5-title1{ padding: 0px 0px 0px 30px;}
+	.block5-title2{ margin-top: 30px;}
+}
+
+@media screen and (max-width: 425px) {
+.block1 {height: 24vh;}
+.block1-content {padding: 0px;}
+.block1-title span {width: 50px;margin:5px;}
+.block1-logo {margin-bottom: -17px;transform: scale(0.8);}
+.block2 {padding: 30px 0px 30px 30px;}
+.logo{display: none;}
+.block4-title {padding: 200px 0px 0px 200px;}
+.block5 p {padding: 0px 0px 0px 30px;}
+.beer {display: none;}
+.block4{display: none;}
+.window{display: none;}
+}
+
+@media screen and (max-width: 320px) {
+.block-text {font-size: 20px;}
+.block1 {height: 24vh;}
+.block2-title {margin-top: 30px;}
+.block2-text {font-size: 20px;}
+.block3-title {font-size: 20px;}
+.block5{height: 800px;}
+}
